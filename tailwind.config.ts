@@ -1,18 +1,28 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
-export default {
+const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        facebookBlue: '#1877F2',
+        youTube: '#FF0000',
+        twitter: '#1DA1F2',
+        instagramStart: '#F58529',
+        instagramMiddle: '#D62976',
+        instagramEnd: '#962FBF',
+        tikTok: '#010002'
       },
-    },
+      backgroundImage: {
+        'instagram-gradient':
+          'linear-gradient(to right, #F58529, #D62976, #962FBF)'
+      }
+    }
   },
-  plugins: [],
-} satisfies Config;
+  plugins: []
+}
+export default config
