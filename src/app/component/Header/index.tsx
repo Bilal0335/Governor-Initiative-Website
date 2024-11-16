@@ -49,8 +49,15 @@ const Header = () => {
             onClick={() => setShowMenu(!showMenu)}
           >
             <div className="flex items-center capitalize">
-              Courses <IoIosArrowDown />
+              Courses <IoIosArrowDown className="pl-2 size-5" />
             </div>
+            {showMenu && (
+              <div className="my absolute right-2 mt-2 w-48 rounded-lg bg-white text-black">
+                <div className="box_shadow bg-zinc-50 p-7 h-[300px] sm:h-auto overflow-auto">
+                  <h1>Courses</h1>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
