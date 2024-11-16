@@ -16,8 +16,8 @@ const config: Config = {
         instagramMiddle: '#D62976',
         instagramEnd: '#962FBF',
         tikTok: '#010002',
-        main: '044e83',
-        sub: '2eb6e8'
+        main: '#044e83',
+        sub: '#2eb6e8'
       },
       backgroundImage: {
         'instagram-gradient':
