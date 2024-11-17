@@ -23,5 +23,8 @@ body {
 .my {
   min-width: max-content;
   inset: -40px -20px auto auto;
-  transform: translate3d(-20.6667px,60.6667px,0px);
+  transform: translate3d(-20.6667px, 60.6667px, 0px);
+}
+.box_shadow {
+  box-shadow: 0px 4px 10px rgba(211, 211, 211, 0.5); /* Light grey */
 }

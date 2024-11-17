@@ -12,12 +12,11 @@ const courses = [
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-gray-200 py-8 px-10 text-gray-800 justify-around flex">
-        <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8">
+      <footer className="bg-[#F4F4F5] py-8 px-6 sm:px-8 lg:px-10 text-gray-800 flex justify-around">
+        <div className="container mx-auto max-w-screen-lg grid md:grid-cols-3 grid-cols-1 gap-6 sm:gap-8">
           <div>
             <h3 className="font-bold mb-4 text-xl">Course Course</h3>
-            <ul className="space-y-2 text-lg">
-              {/* Map over courses array */}
+            <ul className="space-y-2 text-sm">
               {courses.map((course, index) => (
                 <ListItem key={index} href={course.href}>
                   {course.title}
@@ -27,7 +26,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="font-bold mb-4 text-xl">Advanced Courses</h3>
-            <ul className="space-y-2 text-lg">
+            <ul className="space-y-2 text-sm">
               <ListItem href="#">Web 3 and Metaverse</ListItem>
               <ListItem href="#">Cloud-Native Computing</ListItem>
               <ListItem href="#">
@@ -41,39 +40,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-black-400 mb-4 text-xl">
-              Social Link
-            </h3>
-
-            {/* <div className="flex space-x-4 mb-4 cursor-pointer py-1">
-              <Link href="https://www.facebook.com/TeamKTessori" target="_blank">
-                <div className="flex justify-center items-center text-white w-6 h-6 rounded-full bg-facebookBlue pt-1 pb-1">
-                  <FaFacebookF />
-                </div>
-              </Link>
-              <Link href="https://www.youtube.com/@KamranTessorikk" target="_blank">
-                <div className="flex justify-center items-center text-white w-6 h-6 rounded-full bg-youTube pt-1 pb-1">
-                  <FaYoutube />
-                </div>
-              </Link>
-              <Link href="https://twitter.com/KamranTessoriPk" target="_blank">
-                <div className="flex justify-center items-center text-white w-6 h-6 rounded-full bg-twitter pt-1 pb-1">
-                  <FaTwitter />
-                </div>
-              </Link>
-              <Link href="https://www.instagram.com/KamranTessoriPk" target="_blank">
-                <div className="flex justify-center items-center text-white w-6 h-6 rounded-full bg-instagram-gradient pt-1 pb-1">
-                  <FaInstagram />
-                </div>
-              </Link>
-              <Link href="https://www.tiktok.com/@KamranTessoriPk" target="_blank">
-                <div className="flex justify-center items-center text-white w-6 h-6 rounded-full bg-tikTok pt-1 pb-1">
-                  <FaTiktok />
-                </div>
-              </Link>
-            </div> */}
-
-            {/* Social Links */}
+            <h3 className="font-bold mb-4 text-xl">Social Link</h3>
             <SocialLinks />
             <div className="flex flex-wrap space-x-4 mb-4">
               <Link
