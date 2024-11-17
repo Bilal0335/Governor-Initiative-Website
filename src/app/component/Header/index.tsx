@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { CompulsoryData } from "@/data/main/compulsory";
 import { Tracks } from "@/data/main/tracks";
+
 type NavLink = {
   title: string;
   link: string;
@@ -20,8 +21,7 @@ const navLinks: NavLink[] = [
 ];
 
 const Header = () => {
-  // const [open, setOpen] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false); // Removed `open` state
 
   return (
     <div className="sticky top-0 z-30 w-full bg-main backdrop-blur-3xl print:hidden">
@@ -31,14 +31,14 @@ const Header = () => {
             src={Logo}
             alt="GIAIC Logo"
             width={90}
-            className="mt-14 w-[70px] sm:mt-20 sm:w-[80px] md:w-[90]"
+            className="mt-14 w-[70px] sm:mt-20 sm:w-[80px] md:w-[90] "
           />
         </Link>
-        <h3 className="text_shadow hidden  text-[15px] font-extrabold text-[#b9d8f3] lg:block xl-lg:text-xl xl:text-2xl">
+        <h3 className="text_shadow hidden text-[15px] font-extrabold text-[#b9d8f3] lg:block xl-lg:text-xl xl:text-2xl">
           Tuition Free Education Program on Latest Technologies
         </h3>
-        <h3 className="text_shadow  text-[1.125rem] lg:hidden font-extrabold text-[#b9d8f3]">
-          Tuition Free Program{" "}
+        <h3 className="text_shadow text-[1.125rem] lg:hidden font-extrabold text-[#b9d8f3]">
+          Tuition Free Program
         </h3>
         <div className="hidden items-center gap-5 text-[#FAF9F6] sm:flex lg:gap-10">
           {navLinks.map((item) => (
@@ -47,7 +47,7 @@ const Header = () => {
             </Link>
           ))}
           <div
-            className="relative cursor-pointer "
+            className="relative cursor-pointer"
             onClick={() => setShowMenu(!showMenu)}
           >
             <div className="flex items-center capitalize">
@@ -70,7 +70,11 @@ const Header = () => {
                     Advance Courses
                   </h4>
                   {Tracks.map((val) => (
-                    <Link href={`/tracks/${val.id}/4`} key={val.id}>
+                    <Link
+                      href={`/tracks/${val.id}/4`}
+                      key={val.id}
+                      onClick={() => setShowMenu(false)} // Closing menu on click
+                    >
                       <div className="py-1 px-2 text-sm text-[#27272a] hover:text-main">
                         {val.name}
                       </div>
