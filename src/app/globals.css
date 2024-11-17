@@ -25,6 +25,8 @@ body {
   inset: -40px -20px auto auto;
   transform: translate3d(-20.6667px, 60.6667px, 0px);
 }
-.box_shadow {
-  box-shadow: 0px 4px 10px rgba(211, 211, 211, 0.5); /* Light grey */
+.shadow-custom {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 15px 0px; /* Less blur */
 }
+
+

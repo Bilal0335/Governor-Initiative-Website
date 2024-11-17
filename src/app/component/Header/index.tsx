@@ -21,11 +21,11 @@ const navLinks: NavLink[] = [
 ];
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false); // Removed `open` state
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className="sticky top-0 z-30 w-full bg-main backdrop-blur-3xl print:hidden">
-      <div className="m-auto flex h-16 w-[95%] items-center justify-between md:h-20 lg:w-[90%]  xl:w-[1300px]">
+      <div className="m-auto flex h-16 w-[95%] items-center justify-between md:h-20 lg:w-[90%] xl:w-[1300px]">
         <Link href={"/"}>
           <Image
             src={Logo}
@@ -54,7 +54,7 @@ const Header = () => {
               Courses <IoIosArrowDown className="pl-2 size-5" />
             </div>
             {showMenu && (
-              <div className="my absolute right-2 mt-2 w-48 rounded-lg bg-white text-black shadow-lg">
+              <div className="my absolute right-2 mt-2 w-48 rounded-lg bg-white text-black shadow-custom">
                 <div className="bg-zinc-50 p-7 h-[300px] sm:h-auto overflow-auto">
                   <h4 className="text-black text-xl font-bold pb-3 text-left">
                     Courses

@@ -23,6 +23,9 @@ const config: Config = {
         'instagram-gradient':
           'linear-gradient(to right, #F58529, #D62976, #962FBF)'
       },
+      boxShadow: {
+        custom: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
+      },
       screens: {
         xs: '500px',
         sm: '639px',
