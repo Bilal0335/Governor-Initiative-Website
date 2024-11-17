@@ -4,6 +4,7 @@ import Link from "next/link";
 import Logo from "../../../../public/logo.png";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { CompulsoryData } from "@/data/main/compulsory";
 type NavLink = {
   title: string;
   link: string;
@@ -54,7 +55,15 @@ const Header = () => {
             {showMenu && (
               <div className="my absolute right-2 mt-2 w-48 rounded-lg bg-white text-black">
                 <div className="box_shadow bg-zinc-50 p-7 h-[300px] sm:h-auto overflow-auto">
-                  <h1>Courses</h1>
+                  <h4 className="text-black text-xl font-bold pb-3 text-left">Courses</h4>
+                  {
+                    CompulsoryData.map((val)=>(
+                      <Link href={`/compulsory/${val.id}`} key={val.id}>
+                        <div className="py-1 px-2 text-sm text-black hover:text-main">{val.text}</div>
+                      </Link>
+                    ))
+                  }
+                  <h4>Advance Courses</h4>
                 </div>
               </div>
             )}
