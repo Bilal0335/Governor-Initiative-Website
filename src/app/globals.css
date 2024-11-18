@@ -26,7 +26,9 @@ body {
   transform: translate3d(-20.6667px, 60.6667px, 0px);
 }
 .shadow-custom {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 15px 0px; /* Less blur */
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 15px 0px; */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.245);
 }
-
-
+/* .box_shadow { */
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.245); */
+/* } */

@@ -1,5 +1,4 @@
 import ListItem from "./Listitem";
-// import { FaFacebookF, FaYoutube, FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
