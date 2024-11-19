@@ -1,5 +1,9 @@
+import Text from "./component/Text";
+
 export default function Home() {
   return (
-   <div></div>
+    <div>
+      <Text />
+    </div>
   );
 }

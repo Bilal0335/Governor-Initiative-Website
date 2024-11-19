@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
-import Image1 from "@/assets/img/image10.jpg"; // Ensure this path is correct and valid.
+import Image1 from "@/assets/img/image10.jpg"; 
 
 export default class ImagesCarousel extends Component {
   render(): ReactNode {
