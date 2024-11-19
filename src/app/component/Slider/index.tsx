@@ -4,40 +4,38 @@ import { Component, ReactNode } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Image1 from "@/assets/img/image10.jpg"; 
-import Image2 from "@/assets/img/image20.jpg"; 
-import Image3 from "@/assets/img/image30.jpg";
+import Image7 from "@/assets/img/image7.jpg";
+import Image16 from "@/assets/img/image16.jpg";
+import Image17 from "@/assets/img/image17.jpg";
+import Image10 from "@/assets/img/image10.jpg";
+import Image11 from "@/assets/img/image11.jpg";
+import Image12 from "@/assets/img/image12.jpg";
+import Image13 from "@/assets/img/image13.jpg";
+import Image6 from "@/assets/img/image6.jpg";
 
 import Image from "next/image";
+
 export default class ImagesCarousel extends Component {
   render(): ReactNode {
     const data = [
-      {
-        img: Image1,
-        title: "Student learning Web3 basics"
-      },
-      {
-        img: Image2,
-        title: "Student learning Web3 basics"
-      },
-      {
-        img: Image3,
-        title: "Student learning Web3 basics"
-      },
-      {
-        img: Image1,
-        title: "Another Image Example"
-      }
+      { img: Image7, title: "Student learning Web3 basics" },
+      { img: Image16, title: "Student learning Web3 basics" },
+      { img: Image17, title: "Student learning Web3 basics" },
+      { img: Image10, title: "Student learning Web3 basics" },
+      { img: Image11, title: "Student learning Web3 basics" },
+      { img: Image12, title: "Student learning Web3 basics" },
+      { img: Image13, title: "Student learning Web3 basics" },
+      { img: Image6, title: "Student learning Web3 basics" }
     ];
 
     const settings = {
       dots: true,
+      arrows: true,
       dotsClass: "slick-dots line-indicator",
       infinite: true,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 2,
-      arrows: false,
       autoplay: true,
       responsive: [
         {
