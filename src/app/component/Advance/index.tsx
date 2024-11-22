@@ -10,10 +10,10 @@ import npa from "../../../assets/img/image31.jpg";
 const Advance = () => {
   return (
     <div
-      className="xl:w-[1300px] lg:[w-90%] w-[95%] m-auto mt-10 mb-10
+      className="xl:w-[1300px] lg:[w-90%] w-[95%] m-auto mt-10 mb-20
     "
     >
-      <h1 className="lg:text-4xl sm:text-4xl text-2xl sm:text-left txet-center  text-main font-extrabold mt-10">
+      <h1 className="lg:text-4xl sm:text-4xl text-2xl sm:text-left text-left  text-main font-extrabold mt-10">
         Advanced Courses
       </h1>
       <div className="grid xl-lg:grid-cols-4 grid-cols-1 sm:grid-cols-3 xl-lg:gap-10 gap-5 mt-10">
