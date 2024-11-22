@@ -24,8 +24,10 @@ const config: Config = {
           'linear-gradient(to right, #F58529, #D62976, #962FBF)'
       },
       boxShadow: {
-        custom: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
+        custom: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+        white: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 1px 3px',
       },
+
       screens: {
         xs: '500px',
         sm: '639px',
