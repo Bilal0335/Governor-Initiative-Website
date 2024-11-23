@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Solo1 from "@/assets/img/image11.jpg";
+import Solo1 from "@/assets/img/image3.jpg";
+import Solo2 from "@/assets/img/image4.jpg";
+import Solo3 from "@/assets/img/image5.jpg";
 import Slider from "@/app/component/Slider";
 const Text = () => {
   return (
@@ -29,7 +31,12 @@ const Text = () => {
           className="shadow-2xl shadow-black rounded-lg h-[300px] object-cover w-full"
         />
         <Image
-          src={Solo1}
+          src={Solo2}
+          alt="solo1"
+          className="shadow-2xl shadow-black rounded-lg h-[300px] object-cover w-full"
+        />
+        <Image
+          src={Solo3}
           alt="solo1"
           className="shadow-2xl shadow-black rounded-lg h-[300px] object-cover w-full"
         />
