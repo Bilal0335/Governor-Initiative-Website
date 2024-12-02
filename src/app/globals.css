@@ -41,3 +41,6 @@ body {
 .line-indicator li.slick-active {
   background-color: #000;
 }
+.max-h-custom {
+  max-height: 25vh; /* 25% of viewport height */
+}
