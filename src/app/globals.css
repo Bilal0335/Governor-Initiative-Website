@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
 .my {
   min-width: max-content;
   inset: -40px -20px auto auto;
@@ -42,5 +24,5 @@ body {
   background-color: #000;
 }
 .max-h-custom {
-  max-height: 25vh; /* 25% of viewport height */
+  max-height: 25vh;
 }
